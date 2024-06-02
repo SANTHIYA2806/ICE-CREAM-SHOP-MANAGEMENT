@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 360px;
+    height: 520px;
+    background: #d3ad7f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.container .form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.container .login {
+    left: 0;
+}
+
+.container .signup {
+    left: 100%;
+}
+
+.container.active .login {
+    left: -100%;
+}
+
+.container.active .signup {
+    left: 0;
+}
+
+.container .form .title {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.container .form input {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container .form button {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    background: white;
+    color:#d3ad7f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container .switch-button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color:#d3ad7f;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
